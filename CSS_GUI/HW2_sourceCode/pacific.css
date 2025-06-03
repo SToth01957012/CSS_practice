@@ -1,0 +1,129 @@
+
+/**
+Sarah Toth
+6/1/2025
+GUI assignment: Style a Site with External CSS
+This web page is a home page for a resort
+**/
+
+header, hgroup, nav, footer, figure, figcaption, aside, section, article {
+	display: block;
+}
+
+body {
+	background-image: url(../HW2_sourceCode/ptrbackground.jpg); /* set background image */
+	background-color: #00569F; /* background color */
+	color: #666666;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+#wrapper {
+	background-color: #99CCFF; /* blue background behind content */
+	width: 80%; /* 80% of viewport width */
+	min-width: 600px; /* prevents content from becoming smaller than 600 px wide */
+	margin: auto; /* centers horizontally */
+}
+
+ /* navigation sidebar (left side) */
+nav {
+	float: left; /* nav to left side of wrapper */
+	width: 160px; /* fixed width */
+	padding: 20px; /* inner spacing */
+	background-color: #99CCFF;
+}
+
+/* list within nav sidebar */
+nav ul {
+	font-size: 1.2em;
+	list-style-type: none; /* no bullets */
+	padding: 0; /* no default padding */
+}
+
+/* link style within nav sidebar */
+nav a {
+	text-decoration: none; /* no underline */
+	display: block; /* make entire link area clickable */
+	padding: 2px; /* small inner spacing */
+	color: #000033;
+	font-weight: bold; /* bold text */
+}
+
+/* link style visited within nav */
+nav a:visited {
+	color: #344873; /* lighter blue for visited links */
+}
+
+/* link style hover within nav */
+nav a:hover {
+	color: #FFFFFF; /* link turns white when hovered over */
+}
+
+/* style for main heading */
+h1 {
+	margin-bottom: 0; /* no space below h1 */
+	padding: 10px; /* inner spacing */
+	background-image: url(../HW2_sourceCode/sunset.jpg); /* set background image */
+	background-repeat: no-repeat; /* prevents image repetition */
+	background-position: right; /* places image on right side */
+	background-color: #000033; /* rest of background color */
+	color: white; /* text color */
+}
+
+/* style for subheader */
+h2 {
+	color: #3399CC;
+}
+
+/* font styles for h1 and h2 */
+h1,
+h2 {
+	font-family: Georgia, "Times New Roman", serif;
+}
+
+/* content area (right side) */
+#content {
+	background-color: #FFFFFF;
+	margin-left: 200px; /* space for nav(160px) + 20px each side */
+	padding: 20px; /* inner spacing */
+	overflow: auto; /* container allows text to wrap around image */
+}
+
+/* class for resort name */
+.resort {
+	color:#3366CC; /* blue text */
+	font-weight: bold; /* bold text */
+    font-size: 1.1em; /* slightly larger font size */
+}
+
+/* style image inside content */
+#content img {
+	float: left; /* float image left of text */
+	margin-right: 20px; /* space between image and text */
+	width: 300px; /* fixed width */
+	height: auto; /* maintain aspect ratio of image */
+}
+
+/* list styling in content */
+#content ul {
+	list-style-image: url(../HW2_sourceCode/marker.gif); /* bullet image */
+	list-style-position: inside; /* bullets inside list box */
+	padding-left: 30px; /* indent list */
+}
+
+/* smaller font for contact section */
+#contact {
+	font-size: 90%;
+}
+
+dt {
+	color: #000033;
+}
+
+/* styling footer */
+footer {
+	font-family: Georgia, "Times New Roman", serif;
+	background-color: #FFFFFF;
+	margin-left: 200px; /* leave space for nav */
+	font-size: 0.8em; /* smaller text */
+	padding: 20px; /* inner spacing */
+}
