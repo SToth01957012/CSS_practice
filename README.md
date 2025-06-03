@@ -1,2 +1,3 @@
 # CSS_practice
-practicing CSS for GUI class
+GitHub URL where my application resides: 
+link to my Github repository: 
